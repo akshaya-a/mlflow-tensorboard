@@ -1,11 +1,10 @@
+from pathlib import Path
 from typing import Dict, List
 
-from pathlib import Path
-
-from tensorboard.summary import Writer
 import mlflow
-from mlflow.entities import Run, Metric
+from mlflow.entities import Metric, Run
 from mlflow.tracking import MlflowClient
+from tensorboard.summary import Writer
 
 
 # TODO: convert to generators to pass through pagination
