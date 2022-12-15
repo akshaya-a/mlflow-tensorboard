@@ -45,7 +45,7 @@ setup(
     ],
     keywords="",
     url="https://github.com/akshaya-a/mlflow-tensorboard",
-    author="Allen Institute for Artificial Intelligence",
+    author="AK",
     license="Apache",
     packages=find_packages(
         exclude=["*.tests", "*.tests.*", "tests.*", "tests"],
@@ -54,4 +54,5 @@ setup(
     install_requires=read_requirements("requirements.txt"),
     extras_require={"dev": read_requirements("dev-requirements.txt")},
     python_requires=">=3.7",
+    entry_points={"console_scripts": ["mlflowtb = mlflow_tensorboard.__main__:cli"]},
 )

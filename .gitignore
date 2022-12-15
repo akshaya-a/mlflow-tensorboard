@@ -6,6 +6,8 @@
 build/
 dist/
 pip-wheel-metadata/
+tmp/
+mlruns/
 
 
 # dev tools
